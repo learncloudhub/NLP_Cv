@@ -1,0 +1,11 @@
+# Ignore PyCharm internal configuration settings
+.idea/
+
+# Ignore large compressed archive files
+*.zip
+*.rar
+*.7z
+
+# Ignore audio media files
+*.mp3
+*.wav
