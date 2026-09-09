@@ -1,11 +1,56 @@
-# Ignore PyCharm internal configuration settings
-.idea/
-
-# Ignore large compressed archive files
+# ==========================================
+# 1. IGNORE ALL DATASETS & DATA FOLDERS
+# ==========================================
+*.csv
+*.xlsx
+*.xls
+*.json
+*.xml
+*.tsv
 *.zip
+*.tar.gz
 *.rar
 *.7z
+*.pkl
+*.pickle
+*.h5
+*.hd5
+*.parquet
+*.sqlite
+*.db
 
-# Ignore audio media files
-*.mp3
-*.wav
+# Common data folder names
+data/
+datasets/
+input/
+output/
+downloads/
+
+# ==========================================
+# 2. JUPYTER NOTEBOOK CLEANUP
+# ==========================================
+# Ignore hidden Jupyter checkpoint folders
+.ipynb_checkpoints/
+.virtual_documents/
+
+# ==========================================
+# 3. PYTHON SYSTEM & ENVIRONMENTS
+# ==========================================
+# Python bytecode cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+ENV/
+conda-env/
+
+# ==========================================
+# 4. OPERATING SYSTEM FILES
+# ==========================================
+.DS_Store
+Thumbs.db
