@@ -1,0 +1,72 @@
+
+%pip install tensorflow
+
+#import 
+from tensorflow.keras.models import Sequential               #nn layer-by-layer
+from tensorflow.keras.layers import Dense, Input, Conv2D, MaxPool2D, Flatten  # layer
+from keras.utils import plot_model
+from keras.datasets import mnist
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+# load dataset
+(x_train, y_train),(x_test, y_test) = mnist.load_data()  
+x_train.shape, x_test.shape
+
+
+#show train and test data shap
+
+#show first train 25 images from minit
+
+#show first test 25 images from minit
+
+
+
+# Normalize
+x_train = x_train / 255
+x_test = x_test / 255
+
+# show shape of normalize data
+
+#model created
+
+model = Sequential()
+
+  model.add(Input(shape=(28,28,1)))
+
+   #feature , filter=16, kernet_Size (3,3) , activation='relu'
+
+   #reduce size  , pool_size (2,2)               
+
+   #feature , filter=32, kernet_Size (3,3) , activation='relu'
+
+   # 3D to 1D 
+   #classfication
+   #probability
+
+
+model.summary()
+
+model.compile()
+
+
+model.fit(x_train, y_train, epochs=10, batch_size=10)
+
+# test with unknown data
+from google.colab import files
+
+uploaded = 
+
+#read image, resize and binary image with threshold 127
+
+thresh, new = cv2.threshold()
+
+# predit unknown data 
+new = new.reshape(1,28,28)
+result = 
+print(np.argmax(result))
+
+
+plt.imshow(new, cmap = 'gray')
+
